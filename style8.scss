@@ -1,0 +1,54 @@
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: aquamarine;
+}
+
+.slider {
+  width: 100%;
+  max-width: 750px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  background-color: aquamarine;
+}
+
+.slide {
+  width: 35%;
+  max-width: 800px;
+  height: 350px;
+  position: absolute;
+  transition: all 1.5s;
+}
+
+.btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #a59d9d;
+  font-size: 18px;
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
+
+.btn-prev {
+  top: 30%;
+  left: 0.5%;
+}
+
+.btn-next {
+  top: 30%;
+  right: 2.4%;
+}
+
+.photo {
+  border: 5px solid #fff;
+}
